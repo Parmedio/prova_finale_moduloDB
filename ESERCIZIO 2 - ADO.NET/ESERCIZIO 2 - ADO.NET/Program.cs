@@ -3,14 +3,13 @@ using ESERCIZIO_2___ADO.NET;
 using Microsoft.Data.SqlClient;
 using static ESERCIZIO_2___ADO.NET.Repository;
 
-string separator = "===============================================\n";
+string separator = "==============================================================================================\n";
 try
 {
     using (SqlConnection connection = new SqlConnection(connectionString))
     {
         connection.Open();
-
-        Console.WriteLine("Query 01: Scrivere una query \"select\" per recuperare la lista contenete: museo, nome opera, nome \r\npersonaggio degli artisti italiani\n");
+        colorFormatter("green", "Query 01:\nScrivere una query \"select\" per recuperare la lista contenete:\n-> museo\n-> nome opera\n-> nome personaggio\ndegli artisti 'italiani'\n");
 
         using (SqlCommand command = new SqlCommand(query01, connection))
         {
@@ -23,27 +22,29 @@ try
                     {
                         nomePersonaggio = reader.GetString(2);
                     }
-                    Console.WriteLine($"Museum: {reader.GetString(0)}\nArtworkName: {reader.GetString(1)}\nCharacterName: {nomePersonaggio}\n");
+                    colorFormatter("red", "       Museum: ", $"{reader.GetString(0)}");
+                    colorFormatter("red", "  ArtworkName: ", $"{reader.GetString(1)}");
+                    colorFormatter("red", "CharacterName: ", $"{nomePersonaggio}\n");
                 }
             }
         }
-        Console.WriteLine(separator);
-       
-        Console.WriteLine("Query 02: Scrivere una query per recuperare i nomi degli artisti, opere di quali sono conservate a Parigi\n");
+        colorFormatter("magenta", $"{separator}");
 
+        colorFormatter("green", "Query 02:\nScrivere una query per recuperare i nomi degli artisti, opere di quali sono conservate a 'Parigi'\n");
+        
         using (SqlCommand command = new SqlCommand(query02, connection))
         {
             using (SqlDataReader reader = command.ExecuteReader())
             {
                 while (reader.Read())
                 {
-                    Console.WriteLine($"ArtistName: {reader.GetString(0)}\n");
+                    colorFormatter("blue", "ArtistName: ", $"{reader.GetString(0)}\n");
                 }
             }
         }
-        Console.WriteLine(separator);
+        colorFormatter("magenta", $"{separator}");
 
-        Console.WriteLine("Query 03: Recuperare la città in cui è conservato il quadro \"Flora\"\n");
+        colorFormatter("green", "Query 03:\nRecuperare la città in cui è conservato il quadro 'Flora'\n");
 
         using (SqlCommand command = new SqlCommand(query03, connection))
         {
@@ -51,11 +52,11 @@ try
             {
                 while (reader.Read())
                 {
-                    Console.WriteLine($"City: {reader.GetString(0)}\n");
+                    colorFormatter("yellow", "City: ", $"{reader.GetString(0)}\n");
                 }
             }
         }
-        Console.WriteLine(separator);
+        colorFormatter("magenta", $"{separator}");
     }
 }
 catch (Exception ex)

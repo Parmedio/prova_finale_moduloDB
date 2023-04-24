@@ -2003,19 +2003,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\student\\.nuget\\packages\\": {}
+    "C:\\Users\\Utente\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\student\\source\\repos\\prova_finale_moduloDB\\ESERCIZIO 2 - ADO.NET\\ESERCIZIO 2 - ADO.NET\\ESERCIZIO 2 - ADO.NET.csproj",
+      "projectUniqueName": "C:\\DEV\\EURIS Academy\\modulo 04\\prova_finale_moduloDB\\ESERCIZIO 2 - ADO.NET\\ESERCIZIO 2 - ADO.NET\\ESERCIZIO 2 - ADO.NET.csproj",
       "projectName": "ESERCIZIO 2 - ADO.NET",
-      "projectPath": "C:\\Users\\student\\source\\repos\\prova_finale_moduloDB\\ESERCIZIO 2 - ADO.NET\\ESERCIZIO 2 - ADO.NET\\ESERCIZIO 2 - ADO.NET.csproj",
-      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\student\\source\\repos\\prova_finale_moduloDB\\ESERCIZIO 2 - ADO.NET\\ESERCIZIO 2 - ADO.NET\\obj\\",
+      "projectPath": "C:\\DEV\\EURIS Academy\\modulo 04\\prova_finale_moduloDB\\ESERCIZIO 2 - ADO.NET\\ESERCIZIO 2 - ADO.NET\\ESERCIZIO 2 - ADO.NET.csproj",
+      "packagesPath": "C:\\Users\\Utente\\.nuget\\packages\\",
+      "outputPath": "C:\\DEV\\EURIS Academy\\modulo 04\\prova_finale_moduloDB\\ESERCIZIO 2 - ADO.NET\\ESERCIZIO 2 - ADO.NET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Utente\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2062,7 +2062,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
